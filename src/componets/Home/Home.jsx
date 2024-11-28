@@ -8,7 +8,6 @@ import Partners from '../Partners/Partners';
 const Home = () => {
     
     const cards = useLoaderData();
-    console.log(cards);
     
     return (
         <div className=''>

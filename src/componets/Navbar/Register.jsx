@@ -1,11 +1,14 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../ContextProviders/ContextProviders';
+import toast, { Toaster } from 'react-hot-toast';
+import { updateProfile } from 'firebase/auth';
+
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
-    // const [errorMessage, setErrorMessage] = useState('');
+    const navigate = useNavigate();
     
     const handleRegister = e =>{
         e.preventDefault();
@@ -16,21 +19,33 @@ const Register = () => {
         const password = form.get("password");
 
         if(!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/.test(password)){
-            return console.log('sto');
+            return toast.error('Enter minimum 8 character 1 uppercase 1 lowercase and 1 special character');
         }
+
         createUser(email, password)
                 .then(result =>{
                     const registerUser = result.user;
-                    console.log(registerUser);
+                    console.log(result);
+                    toast.success('Registered Successfully !');
+                    navigate('/');
+                    updateProfile(registerUser, {
+                        displayName: name,
+                        photoURL: photo
+                    })
+                    .then( () =>{
+                        console.log("update successfully");
+                    })
+                    .catch(error =>{
+                        console.error(error);
+                    })
                 })
                 .catch(error =>{
                     const errorMessage = error.message;
                     console.log(errorMessage);
-                })
-        
-        
-        
+                    toast.error('This email already use');
+                }) 
     }
+
     return (
         <div className='mt-7 px-7'>
             <h1 className='text-4xl font-bold text-center text-white'>Register Now !!!</h1>
@@ -72,7 +87,9 @@ const Register = () => {
                     <p>Already have an account ? <Link to={'/login'}><button className='text-white font-semibold'>Login</button></Link></p>
                 </div>
             </div>
+            <Toaster />
         </div>
+        
     );
 };
 

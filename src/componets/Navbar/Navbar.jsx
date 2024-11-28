@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../ContextProviders/ContextProviders';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+    
+    const handleLogOut = () =>{
+        logOut()
+            .then( () =>{
+                toast.success("Logout Successfully")
+            })
+            .catch(error => console.error(error));
+    }
+    
+
     const navLinks = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/categories'}>Categories</NavLink></li>
@@ -38,7 +52,19 @@ const Navbar = () => {
                 <h1 className='text-4xl font-bold text-[#A5D7E8]'>EliteHavenX</h1>
             </div>
             <div className="navbar-end">
-                <Link to={'/login'}><button className='bg-[#19376D] px-5 py-2 rounded-xl font-semibold'>Login</button></Link>
+                {
+                    user ? <div className='flex items-center gap-4'>
+                        <h1>{user.displayName}</h1>
+                        <div className="avatar">
+                            <div className="w-12 rounded-full">
+                                <img src={user.photoURL} className='border-2 border-black'/>
+                            </div>
+                        </div>
+                        <button onClick={handleLogOut} className='bg-[#19376D] px-5 py-2 rounded-xl font-semibold'>Logout</button>
+                    </div>
+                    : 
+                    <Link to={'/login'}><button className='bg-[#19376D] px-5 py-2 rounded-xl font-semibold'>Login</button></Link>
+                }
             </div>
         </div>
         </div>
