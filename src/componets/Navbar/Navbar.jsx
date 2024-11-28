@@ -38,7 +38,7 @@ const Navbar = () => {
                 <h1 className='text-4xl font-bold text-[#A5D7E8]'>EliteHavenX</h1>
             </div>
             <div className="navbar-end">
-                <Link to={'/login '}><button className='bg-[#19376D] px-5 py-2 rounded-xl font-semibold'>Login</button></Link>
+                <Link to={'/login'}><button className='bg-[#19376D] px-5 py-2 rounded-xl font-semibold'>Login</button></Link>
             </div>
         </div>
         </div>

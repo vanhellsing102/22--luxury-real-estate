@@ -9,6 +9,8 @@ import PentHouse from "../componets/Categories/PentHouse/PentHouse";
 import PrivateIslands from "../componets/Categories/PrivateIslands/PrivateIslands";
 import Resorts from "../componets/Categories/Resorts/Resorts";
 import Villas from "../componets/Categories/Villas/Villas";
+import Login from "../componets/Navbar/Login";
+import Register from "../componets/Navbar/Register";
 
 const router = createBrowserRouter([
     {
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
                 path: '/villas',
                 element: <Villas></Villas>,
                 loader: () => fetch('villas.json')
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
