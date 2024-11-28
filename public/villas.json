@@ -1,0 +1,142 @@
+[
+    {
+      "property_id": "V1001",
+      "title": "Luxury Villa in Beverly Hills",
+      "image": "https://i.postimg.cc/4db7dH1H/pexels-photo-8134745.jpg",
+      "area": "5000 sq ft",
+      "beds": 6,
+      "baths": 5,
+      "floor": 2,
+      "garage": 3,
+      "added_date": "2024-11-01",
+      "location": "Beverly Hills, California",
+      "segment_name": "Luxury",
+      "description": "This stunning luxury villa in Beverly Hills offers expansive living spaces with a contemporary design. It features six spacious bedrooms, five luxurious bathrooms, and an impressive two-story layout. The villa is equipped with state-of-the-art amenities including a swimming pool, home theater, and a fully-equipped kitchen. The property is situated in a prime location, offering breathtaking views of the city. The landscaped garden and outdoor lounge areas provide an ideal space for entertaining guests or relaxing in privacy. A three-car garage ensures convenience, and the villa’s modern architecture blends perfectly with the surrounding natural beauty.",
+      "price": "$12,000,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "home theater",
+        "garden"
+      ]
+    },
+    {
+      "property_id": "V1002",
+      "title": "Modern Villa with Ocean View",
+      "image": "https://i.postimg.cc/Y2RLBg9J/pexels-photo-8143675.jpg",
+      "area": "3500 sq ft",
+      "beds": 5,
+      "baths": 4,
+      "floor": 2,
+      "garage": 2,
+      "added_date": "2024-11-05",
+      "location": "Malibu, California",
+      "segment_name": "Contemporary",
+      "description": "Nestled in the hills of Malibu, this modern villa offers stunning panoramic ocean views. With five spacious bedrooms and four elegant bathrooms, this home is designed for luxury living. The open-plan living area includes a chef’s kitchen, expansive living room with floor-to-ceiling windows, and a formal dining area. The villa’s outdoor spaces are just as impressive, featuring an infinity-edge pool and jacuzzi overlooking the ocean. A two-car garage, along with additional parking space, ensures convenience. The villa's eco-friendly features and energy-efficient design make it the perfect blend of style and sustainability.",
+      "price": "$8,500,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "jacuzzi",
+        "ocean view"
+      ]
+    },
+    {
+      "property_id": "V1003",
+      "title": "Elegant Villa in Tuscany",
+      "image": "https://i.postimg.cc/Wb4FN3qt/pexels-photo-1438832.jpg",
+      "area": "4000 sq ft",
+      "beds": 4,
+      "baths": 4,
+      "floor": 2,
+      "garage": 1,
+      "added_date": "2024-10-20",
+      "location": "Tuscany, Italy",
+      "segment_name": "Estate",
+      "description": "Located in the heart of Tuscany, this elegant villa blends old-world charm with modern amenities. With four beautifully appointed bedrooms and four en-suite bathrooms, the villa offers both luxury and comfort. The spacious living areas are adorned with antique furnishings and stunning artwork, while the chef’s kitchen is equipped with high-end appliances. Outside, the property is surrounded by vineyards and olive groves, providing complete privacy and breathtaking views of the Tuscan countryside. A large outdoor terrace with a swimming pool and dining area is perfect for entertaining guests.",
+      "price": "$6,200,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "vineyard",
+        "outdoor terrace"
+      ]
+    },
+    {
+      "property_id": "V1004",
+      "title": "Charming Villa in Provence",
+      "image": "https://i.postimg.cc/FHdYSBZ4/pexels-photo-6032280.jpg",
+      "area": "3200 sq ft",
+      "beds": 5,
+      "baths": 3,
+      "floor": 1,
+      "garage": 2,
+      "added_date": "2024-09-15",
+      "location": "Provence, France",
+      "segment_name": "Classic",
+      "description": "This charming villa in the heart of Provence is an idyllic retreat, offering five bedrooms and three bathrooms in a serene rural setting. The open-plan kitchen is perfect for preparing meals using fresh local produce, while the living room with a stone fireplace provides a cozy atmosphere. Outside, the villa is surrounded by beautiful gardens and mature trees, offering peace and privacy. The large pool area with a sun deck is ideal for relaxing, and the villa also includes a two-car garage and plenty of parking space. The village of Provence is just a short drive away, making this villa a perfect blend of countryside living with easy access to nearby amenities.",
+      "price": "$3,750,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "garden",
+        "sun deck"
+      ]
+    },
+    {
+      "property_id": "V1005",
+      "title": "Spacious Villa in Dubai Hills",
+      "image": "https://i.postimg.cc/mgtHwDTK/pexels-photo-338504.jpg",
+      "area": "6000 sq ft",
+      "beds": 7,
+      "baths": 6,
+      "floor": 3,
+      "garage": 4,
+      "added_date": "2024-11-10",
+      "location": "Dubai Hills, UAE",
+      "segment_name": "Luxury",
+      "description": "Located in the prestigious Dubai Hills, this luxurious villa spans over 6000 square feet of living space. The villa features seven large bedrooms, six bathrooms, and expansive open-plan living areas, including a grand living room and a formal dining room. The state-of-the-art kitchen comes with the latest appliances, and the villa also includes a fully-equipped home gym, a private cinema room, and an elevator for easy access across the three floors. The exterior features a massive swimming pool, a landscaped garden, and a spacious patio perfect for outdoor dining and entertaining. The villa also offers a four-car garage and is close to top schools and shopping centers.",
+      "price": "$18,500,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "home gym",
+        "cinema room",
+        "garden"
+      ]
+    },
+    {
+      "property_id": "V1006",
+      "title": "Contemporary Villa in Bali",
+      "image": "https://i.postimg.cc/SsW8Mvms/pexels-photo-258154.jpg",
+      "area": "3000 sq ft",
+      "beds": 4,
+      "baths": 4,
+      "floor": 2,
+      "garage": 1,
+      "added_date": "2024-10-05",
+      "location": "Bali, Indonesia",
+      "segment_name": "Modern",
+      "description": "This contemporary villa in Bali combines luxurious design with natural beauty. With four bedrooms and four bathrooms, the villa offers a tranquil escape in a tropical paradise. The open-concept design includes a spacious living room with a modern kitchen and dining area, all of which open to an expansive terrace with views of the lush garden. The villa is surrounded by palm trees and tropical foliage, creating a private and serene environment. The outdoor infinity pool overlooks a tranquil pond, providing the perfect setting for relaxation. The villa also features a one-car garage and is just a short drive from Bali’s top beaches and restaurants.",
+      "price": "$4,200,000",
+      "status": "sale",
+      "facilities": [
+        "living room",
+        "swimming pool",
+        "Kitchen",
+        "terrace",
+        "tropical garden"
+      ]
+    }
+  ]
+  
