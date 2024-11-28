@@ -5,6 +5,10 @@ import Categories from "../componets/Categories/Categories";
 import CardsDetails from "../componets/CardsDetails/CardsDetails";
 import BeachFront from "../componets/Categories/BeachFront/BeachFront";
 import Mansions from "../componets/Categories/Mansions/Mansions";
+import PentHouse from "../componets/Categories/PentHouse/PentHouse";
+import PrivateIslands from "../componets/Categories/PrivateIslands/PrivateIslands";
+import Resorts from "../componets/Categories/Resorts/Resorts";
+import Villas from "../componets/Categories/Villas/Villas";
 
 const router = createBrowserRouter([
     {
@@ -25,11 +29,6 @@ const router = createBrowserRouter([
                 element: <CardsDetails></CardsDetails>,
                 loader: () => fetch('/categories.json')
             },
-            // {
-            //     path: '/details/:id',
-            //     element: <CardsDetails></CardsDetails>,
-            //     loader: () => fetch('/penthouse.json')
-            // },
             {
                 path: '/beachfront',
                 element: <BeachFront></BeachFront>,
@@ -39,6 +38,26 @@ const router = createBrowserRouter([
                 path: '/mansions',
                 element: <Mansions></Mansions>,
                 loader: () => fetch('/mansions.json')
+            },
+            {
+                path: '/penthouse',
+                element: <PentHouse></PentHouse>,
+                loader: () => fetch('/penthouse.json')
+            },
+            {
+                path: '/private-islands',
+                element: <PrivateIslands></PrivateIslands>,
+                loader: () => fetch('/privateislands.json')
+            },
+            {
+                path: '/resorts',
+                element: <Resorts></Resorts>,
+                loader: () => fetch('/resorts.json')
+            },
+            {
+                path: '/villas',
+                element: <Villas></Villas>,
+                loader: () => fetch('villas.json')
             }
         ]
     }

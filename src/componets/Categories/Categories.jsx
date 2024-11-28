@@ -47,7 +47,7 @@ const Categories = () => {
                     </Link>
                 </div>
                 <div className='border-2 border-black text-center bg-[#19376D] h-64 flex flex-col justify-center items-center' data-aos="zoom-in-down" data-aos-duration="1000">
-                    <Link to={'/resotrs'}>
+                    <Link to={'/resorts'}>
                         <img className='mx-auto' src={resorts} alt="" />
                         <h2 className='text-2xl font-semibold text-white mt-2'>Resorts</h2>
                         <p className='mt-3'><FaArrowRight className='w-full text-4xl '></FaArrowRight></p>
