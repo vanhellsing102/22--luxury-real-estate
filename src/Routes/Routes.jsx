@@ -11,11 +11,16 @@ import Resorts from "../componets/Categories/Resorts/Resorts";
 import Villas from "../componets/Categories/Villas/Villas";
 import Login from "../componets/Navbar/Login";
 import Register from "../componets/Navbar/Register";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import Blogs from "../componets/Blogs/Blogs";
+import Contact from "../componets/Contact/Contact";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -28,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <CardsDetails></CardsDetails>,
+                element: <PrivateRoutes><CardsDetails></CardsDetails></PrivateRoutes>,
                 loader: () => fetch('/categories.json')
             },
             {
@@ -68,7 +73,15 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            }
+            },
+            {
+                path: '/blogs',
+                element: <Blogs></Blogs>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
+            },
         ]
     }
 ])

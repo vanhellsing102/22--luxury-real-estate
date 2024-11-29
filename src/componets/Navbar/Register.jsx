@@ -3,12 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../ContextProviders/ContextProviders';
 import toast, { Toaster } from 'react-hot-toast';
 import { updateProfile } from 'firebase/auth';
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(true);
     
     const handleRegister = e =>{
         e.preventDefault();
@@ -73,7 +75,15 @@ const Register = () => {
                         <label className="label">
                             <span>Password</span>
                         </label>
-                        <input type="password" name='password' placeholder="Enter Your Password" className="input input-bordered" required />
+                        <div className='relative form-control'>
+                            <input type={showPassword ? "text" : "password"} name='password' placeholder="Enter Your Password" className="input input-bordered" required />
+                            {
+                                showPassword ? 
+                                <FiEye onClick={ () => setShowPassword(!showPassword)} className='absolute right-2 top-4'></FiEye>
+                                :
+                                <FiEyeOff onClick={ () => setShowPassword(!showPassword)} className='absolute right-2 top-4'></FiEyeOff>
+                            }
+                        </div>
                         <label className='flex mt-2 gap-2 items-center'>
                             <input type="checkbox" defaultChecked className="checkbox checkbox-accent checkbox-sm" />
                             <p>Accept Temrs & Conditons</p>
