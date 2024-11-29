@@ -19,7 +19,7 @@ import logo14 from '../../assets/company logo/Logomakr-templates-excellent-logo.
 const Partners = () => {
     return (
         <div className='partners mb-12'>
-            <h2 className='text-4xl text-center mt-32 font-bold mb-10'>Our Clients and Partners</h2>
+            <h2 className='text-4xl text-center mt-16 font-bold mb-10'>Our Clients and Partners</h2>
             <Marquee pauseOnHover={true} speed={100} className='flex items-center bg-slate-700 lg:h-72 md:h-72 h-auto'>
                 <img src={logo1} alt="" />
                 <img src={logo2} alt="" />
