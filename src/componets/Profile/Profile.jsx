@@ -15,10 +15,12 @@ const Profile = () => {
         const form = new FormData(e.target);
         const name = form.get("name");
         const photo = form.get("photo");
-        
+        let displayName = "";
+        let photoURL = "";
+
         updateProfile(auth.currentUser, {
-            displayName : name,
-            photoURL : photo
+            displayName : displayName + name,
+            photoURL : photo + photoURL,
         })
             .then( () =>{
                 console.log("updated profile");
