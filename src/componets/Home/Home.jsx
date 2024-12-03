@@ -6,6 +6,7 @@ import ApartmentTypes from '../ApartmentTypes/ApartmentTypes';
 import Partners from '../Partners/Partners';
 import Services from '../Services/Services';
 import Video from '../Video/Video';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     
@@ -13,6 +14,9 @@ const Home = () => {
     
     return (
         <div className=''>
+            <Helmet>
+                <title>Elite Haven X || Home</title>
+            </Helmet>
             <Slider></Slider>
             <div className='text-center mb-16'>
                 <h1 className='text-4xl font-semibold mt-32'>Explore your dream home today</h1>

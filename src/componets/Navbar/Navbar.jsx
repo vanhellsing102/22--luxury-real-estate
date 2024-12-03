@@ -21,7 +21,12 @@ const Navbar = () => {
         <li><NavLink to={'/categories'}>Categories</NavLink></li>
         <li><NavLink to={'/blogs'}>Blogs</NavLink></li>
         <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
-        <li><NavLink to={'/about'}>About Us</NavLink></li>
+        {
+            user && 
+            <>
+                <li><NavLink to={'/profile'}>Profile</NavLink></li>
+            </>
+        }
     </>
     return (
         <div className='bg-[#576CBC]'>
@@ -39,7 +44,6 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
             </div>
             <div className="navbar-start hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

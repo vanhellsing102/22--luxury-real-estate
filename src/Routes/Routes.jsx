@@ -15,6 +15,7 @@ import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 import Blogs from "../componets/Blogs/Blogs";
 import Contact from "../componets/Contact/Contact";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import Profile from "../componets/Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
                 path: '/contact',
                 element: <Contact></Contact>
             },
+            {
+                path: '/profile',
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
+            }
         ]
     }
 ])

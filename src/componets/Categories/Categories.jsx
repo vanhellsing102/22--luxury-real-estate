@@ -11,11 +11,15 @@ import { Link } from 'react-router-dom';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 AOS.init();
 
 const Categories = () => {
     return (
         <div className='categories px-7'>
+            <Helmet>
+                <title>Elite Haven X || Categories</title>
+            </Helmet>
             <h1 className='text-4xl text-center font-bold text-white my-10'>Discover Popular Properties</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-12'>
                 <div className='border-2 border-black text-center bg-[#19376D] h-64 flex flex-col justify-center items-center' data-aos="fade-down-right" data-aos-duration="1000">

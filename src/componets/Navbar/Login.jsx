@@ -4,6 +4,7 @@ import { AuthContext } from '../../ContextProviders/ContextProviders';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
 
@@ -53,6 +54,9 @@ const Login = () => {
     
     return (
         <div className='mt-7 px-7'>
+            <Helmet>
+                <title>Elite Haven X || Login</title>
+            </Helmet>
             <h1 className='text-4xl font-bold text-center text-white'>Login Now !!!</h1>
             <div className="md:w-1/2 lg:w-2/4 w-full mx-auto mb-16 bg-[#19376D] p-10 rounded-2xl mt-5">
                 <form onSubmit={handleLogin} className='text-black font-normal'>

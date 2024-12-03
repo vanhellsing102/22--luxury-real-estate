@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Blogs = () => {
     return (
         <div className='md:px-7 lg:px-10 px-4'>
+            <Helmet>
+                <title>Elite Haven X || Blogs</title>
+            </Helmet>
             <h1 className='text-white font-semibold text-center mt-7 text-3xl mb-3' data-aos="fade-down" data-aos-duration="1000">Luxury Blogs</h1>
             <div className='bg-[#D7D3BF] text-black rounded-lg p-5 mb-7' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
                 <h3 className='font-bold'>Property Spotlights :</h3>

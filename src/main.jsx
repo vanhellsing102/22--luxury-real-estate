@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import router from './Routes/Routes.jsx'
 import ContextProviders from './ContextProviders/ContextProviders.jsx'
+import { Helmet } from 'react-helmet'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
